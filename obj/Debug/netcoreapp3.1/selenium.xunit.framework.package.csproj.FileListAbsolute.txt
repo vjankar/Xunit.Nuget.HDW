@@ -12,3 +12,4 @@ Y:\DHW\Selenium dotNet\selenium.xunit.framework.package\obj\Debug\netcoreapp3.1\
 Y:\DHW\Selenium dotNet\selenium.xunit.framework.package\obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.dll
 Y:\DHW\Selenium dotNet\selenium.xunit.framework.package\obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.pdb
 Y:\DHW\Selenium dotNet\selenium.xunit.framework.package\obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.genruntimeconfig.cache
+Y:\DHW\Selenium dotNet\selenium.xunit.framework.package\obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.csprojAssemblyReference.cache

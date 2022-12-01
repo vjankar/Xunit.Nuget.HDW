@@ -1,25 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>HRSA</Authors>
-    <Product>selenium.xunit.framework.package</Product>
-    <Company>HRSA</Company>
-    <PackageId>test.package</PackageId>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath></OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE</DefineConstants>
-    <WarningLevel>0</WarningLevel>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningsAsErrors>;NU1605</WarningsAsErrors>
+	  <OutputType>Library</OutputType>
+	  <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <Version>1.0.0</Version>
+	  <FileVersion>1.0.0.0</FileVersion>
+	  <AssemblyVersion>1.0.0.0</AssemblyVersion>
+	  <Authors>HDW</Authors>
+	  <Company>HRSA</Company>
+	  <IsPackable>true</IsPackable>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Product>External libraries</Product>
+	  <PackageId>HDW.Selenium.xunit.AutomationFramework</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +22,10 @@
     <Content Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.deps.json" />
     <Content Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.dev.json" />
     <Content Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.deps.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.dev.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.json" />
     <Content Include="obj\project.assets.json" />
     <Content Include="obj\selenium.xunit.framework.package.csproj.nuget.dgspec.json" />
   </ItemGroup>
@@ -40,15 +37,12 @@
     <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
     <PackageReference Include="SpecFlow" Version="3.9.74" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
-    <PackageReference Include="Syroot.Windows.IO.KnownFolders" Version="1.3.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
     <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.assert" Version="2.4.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Constant\" />
-    <Folder Include="obj\Debug\" />
     <Folder Include="obj\Release\" />
   </ItemGroup>
 
@@ -63,6 +57,17 @@
     <None Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.dll" />
     <None Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.pdb" />
     <None Include="bin\Release\netcoreapp3.1\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium-manager\linux\selenium-manager" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium-manager\macos\selenium-manager" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium-manager\windows\selenium-manager.exe" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll" />
     <None Include="obj\project.nuget.cache" />
     <None Include="obj\selenium.xunit.framework.package.csproj.nuget.g.props" />
     <None Include="obj\selenium.xunit.framework.package.csproj.nuget.g.targets" />
@@ -92,6 +97,9 @@
     <Compile Include="Helper\WaitTime.cs" />
     <Compile Include="Helper\WebDriverExtension.cs" />
     <Compile Include="Helper\WebElementExtension.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\selenium.xunit.framework.package.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\xUnit.AssemblyHooks.cs" />
   </ItemGroup>
 
 </Project>

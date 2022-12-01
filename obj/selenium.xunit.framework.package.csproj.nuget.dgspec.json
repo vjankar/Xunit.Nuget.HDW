@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "Y:\\DHW\\Selenium dotNet\\selenium.xunit.framework.package\\selenium.xunit.framework.package.csproj",
-        "projectName": "test.package",
+        "projectName": "HDW.Selenium.xunit.AutomationFramework",
         "projectPath": "Y:\\DHW\\Selenium dotNet\\selenium.xunit.framework.package\\selenium.xunit.framework.package.csproj",
         "packagesPath": "C:\\Users\\varsha.jankar\\.nuget\\packages\\",
         "outputPath": "Y:\\DHW\\Selenium dotNet\\selenium.xunit.framework.package\\obj\\",
@@ -64,14 +64,6 @@
             "SpecFlow.xUnit": {
               "target": "Package",
               "version": "[3.9.74, )"
-            },
-            "Syroot.Windows.IO.KnownFolders": {
-              "target": "Package",
-              "version": "[1.3.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.5, )"
             },
             "xunit": {
               "target": "Package",
