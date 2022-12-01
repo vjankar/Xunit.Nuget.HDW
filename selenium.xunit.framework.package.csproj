@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>HRSA</Authors>
+    <Product>selenium.xunit.framework.package</Product>
+    <Company>HRSA</Company>
+    <PackageId>test.package</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath></OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>0</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>;NU1605</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\selenium.xunit.framework.package.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.json" />
+    <Content Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.deps.json" />
+    <Content Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.dev.json" />
+    <Content Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.runtimeconfig.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\selenium.xunit.framework.package.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="ExtentReports" Version="4.1.0" />
+    <PackageReference Include="Selenium.Support" Version="4.6.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
+    <PackageReference Include="Syroot.Windows.IO.KnownFolders" Version="1.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.assert" Version="2.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Constant\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Release\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\chromedriver.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\selenium.xunit.framework.package.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\selenium.xunit.framework.package.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll" />
+    <None Include="bin\Release\netcoreapp3.1\selenium-manager\linux\selenium-manager" />
+    <None Include="bin\Release\netcoreapp3.1\selenium-manager\macos\selenium-manager" />
+    <None Include="bin\Release\netcoreapp3.1\selenium-manager\windows\selenium-manager.exe" />
+    <None Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.dll" />
+    <None Include="bin\Release\netcoreapp3.1\selenium.xunit.framework.package.pdb" />
+    <None Include="bin\Release\netcoreapp3.1\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\selenium.xunit.framework.package.csproj.nuget.g.props" />
+    <None Include="obj\selenium.xunit.framework.package.csproj.nuget.g.targets" />
+    <None Include="selenium.xunit.framework.package.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\varsha.jankar\.nuget\packages\selenium.webdriver\4.6.0\build\..\manager\linux\selenium-manager" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\varsha.jankar\.nuget\packages\selenium.webdriver\4.6.0\build\..\manager\macos\selenium-manager" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\varsha.jankar\.nuget\packages\selenium.webdriver\4.6.0\build\..\manager\windows\selenium-manager.exe" />
+    <None Remove="C:\Users\varsha.jankar\.nuget\packages\specflow.xunit\3.9.74\build\\..\lib\netstandard2.0\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Base\BasePage.cs" />
+    <Compile Include="Base\DriverConfig.cs" />
+    <Compile Include="Base\TestBase.cs" />
+    <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="Config\AppSettings.cs" />
+    <Compile Include="Config\ConfigReader.cs" />
+    <Compile Include="Helper\WaitTime.cs" />
+    <Compile Include="Helper\WebDriverExtension.cs" />
+    <Compile Include="Helper\WebElementExtension.cs" />
+  </ItemGroup>
+
+</Project>
